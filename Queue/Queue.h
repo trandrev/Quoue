@@ -26,6 +26,21 @@ public:
 			this->mass[i] = this->mass[i + rLoc-merge];
 		}
 	}
+	
+	bool isEven()
+	{
+		try
+		{
+			if(mass[lLoc] % 2 == 0)
+				return true;
+		}
+		catch (...)
+		{}
+		return false;
+		
+	}
+		
+			
 
 	void push(const ELEM& el)
 	{
